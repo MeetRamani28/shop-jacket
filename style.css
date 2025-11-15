@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+#nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 0px 30px;
+}
+
+#nav h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#nav i{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 501;
+    border-radius: 50%;
+}
+
+#center{
+    width: 100%;
+    padding: 20px 80px;
+}
+
+#center h1{
+    font-size: 4.1vw;
+    font-weight: 500;
+    line-height: 4.4vw;
+}
+
+#center-in{
+    width: 100%;
+    margin-top: 42px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#center-in p{
+    font-size: 1.15vw;
+    font-weight: 600;
+    line-height: 1.8vw;
+}
+
+#right{
+    width: 20%;
+}
+
+.elem{
+    padding: 20px 0px;
+    border-top: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.elem i{
+    transform: rotate(320deg);
+    font-size: 25px;
+    font-weight: 501;
+    opacity: 0;
+}
+
+.elem a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.elem:hover i{
+    opacity: 1;
+}
+
+#bottom{
+    height: calc(100% - 491px);
+    width: 100%;
+    background-color: red;
+    background-image: url(lock3.jpg);
+    background-size: cover;
+    background-position: 0 25%;
+}
+
+@media (max-width:600px){
+    #nav{
+        height: 60px;
+        gap: 23px;
+        padding: 0 20px;
+    }
+
+    #nav h4{
+        font-size: 12px;
+        font-weight: 600;
+        display: none;
+    }
+
+    #nav i{
+        font-size: 11px;
+        padding: 6px;
+    }
+
+    #center{
+        padding: 15px 20px;
+    }
+
+    #center h1{
+        font-size: 10vw;
+        font-weight: 500;
+        line-height: 12vw;
+    }
+
+    #center-in{
+        display: flex;
+        margin-top: 24px;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: space-between;
+    }
+
+    #center-in p{
+        font-size: 3vw;
+        line-height: 4.2vw;
+    }
+
+    #right{
+        width: 100%;
+    }
+
+    .elem{
+        padding: 8px 0px;
+        border-top: 1.5px solid #000;
+    }
+
+    .elem i{
+        font-size: 18px;
+        opacity: 1;
+        color: #303030;
+    }
+
+    .elem a{
+        color: #303030;
+        font-size: 12px;
+    }
+
+    #bottom{
+        height: 90.5vw;
+    }
+}
